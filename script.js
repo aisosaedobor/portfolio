@@ -424,20 +424,30 @@ if (nextBtn) nextBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', initCarousel);
 
 // =============================================
-// BACK TO TOP
+// FLOATING BUTTONS - BACK TO TOP & SCHEDULE
 // =============================================
 const backToTopBtn = document.getElementById('backToTop');
+const scheduleBtn = document.getElementById('scheduleBtn');
 
+// Show/hide both buttons on scroll
 window.addEventListener('scroll', () => {
     if (window.scrollY > 400) {
         backToTopBtn.classList.add('visible');
+        scheduleBtn.classList.add('visible');
     } else {
         backToTopBtn.classList.remove('visible');
+        scheduleBtn.classList.remove('visible');
     }
 });
 
+// Back to Top - smooth scroll to top
 backToTopBtn.addEventListener('click', () => {
     lenis.scrollTo(0, { duration: 1.2, offset: 0 });
+});
+
+// Schedule Button - open Calendly in new tab
+scheduleBtn.addEventListener('click', () => {
+    window.open('https://calendly.com/aisosacynthiaedobor/15-minute-discovery-call', '_blank');
 });
 
 // =============================================
@@ -564,3 +574,4 @@ console.log('📝 Formspree: Connected & ready');
 console.log('✨ Typewriter: "I create operational clarity."');
 console.log('🛠️ Tools: 6 categories with 30+ tools listed');
 console.log('💬 Testimonials: 12 real client reviews');
+console.log('📌 Floating Buttons: Back to Top (right) + Schedule (left)');

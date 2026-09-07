@@ -1551,7 +1551,139 @@ footer {
 }
 
 /* =============================================
-   BACK TO TOP
+   FLOATING BUTTONS - BACK TO TOP & SCHEDULE
+   ============================================= */
+.floating-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--warm-gold);
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(212, 165, 74, 0.35);
+    transition: var(--transition);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.floating-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.floating-btn:hover {
+    background: var(--camel);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(212, 165, 74, 0.45);
+}
+
+/* Back to Top - Bottom Right */
+.back-to-top {
+    bottom: 30px;
+    right: 30px;
+}
+
+/* Schedule Button - Bottom Left */
+.schedule-btn {
+    bottom: 30px;
+    left: 30px;
+}
+
+/* Tooltip on hover - Schedule Button */
+.schedule-btn::after {
+    content: "Book a Discovery Call";
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--deep-brown);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.schedule-btn::before {
+    content: '';
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: var(--deep-brown);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.schedule-btn:hover::after,
+.schedule-btn:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tooltip on hover - Back to Top */
+.back-to-top::after {
+    content: "Back to Top";
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--deep-brown);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top::before {
+    content: '';
+    position: absolute;
+    right: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: var(--deep-brown);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.back-to-top:hover::after,
+.back-to-top:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =============================================
+   BACK TO TOP (LEGACY - KEPT FOR COMPATIBILITY)
    ============================================= */
 .back-to-top {
     position: fixed;
@@ -1858,6 +1990,30 @@ footer {
     .tool-card {
         padding: 24px 20px;
     }
+
+    /* Floating Buttons - Mobile */
+    .floating-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .schedule-btn {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .schedule-btn::after,
+    .schedule-btn::before,
+    .back-to-top::after,
+    .back-to-top::before {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1907,5 +2063,22 @@ footer {
 
     .tool-card ul li {
         font-size: 0.8rem;
+    }
+
+    /* Floating Buttons - Small Mobile */
+    .floating-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+
+    .back-to-top {
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .schedule-btn {
+        bottom: 16px;
+        left: 16px;
     }
 }
