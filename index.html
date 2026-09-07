@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aisosa Edobor · Executive Assistant</title>
+    <meta name="description"
+        content="Executive Assistant helping founders and executives stay organized, on schedule, and ahead of their inbox. Remote-ready with systems & calendars management expertise." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aisosa Edobor · Executive Assistant" />
+    <meta property="og:description"
+        content="Executive Assistant helping founders and executives stay organized, on schedule, and ahead of their inbox. Remote-ready with systems & calendars management expertise." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aisosa-edobor.github.io/portfolio/" />
+    <meta property="og:image" content="https://aisosa-edobor.github.io/portfolio/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Aisosa Edobor - Executive Assistant" />
+    <meta property="og:site_name" content="Aisosa Edobor · Executive Assistant" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aisosa Edobor · Executive Assistant" />
+    <meta name="twitter:description"
+        content="Executive Assistant helping founders and executives stay organized, on schedule, and ahead of their inbox." />
+    <meta name="twitter:image" content="https://aisosa-edobor.github.io/portfolio/assets/og-image.png" />
+    <meta name="twitter:image:alt" content="Aisosa Edobor - Executive Assistant" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Lenis Smooth Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <!-- =============================================
+    NOISE / GRAIN OVERLAY
+    ============================================= -->
+    <div class="noise-overlay"></div>
+
+    <!-- =============================================
+    CUSTOM CURSOR
+    ============================================= -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- =============================================
+    FLOATING BACK TO TOP BUTTON
+    ============================================= -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- =============================================
+    NAVIGATION
+    ============================================= -->
+    <nav class="navbar glass-nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Aisosa<span>.</span></div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#competencies">Competencies</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- =============================================
+    HERO
+    ============================================= -->
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Left: Hero Image -->
+                <div class="hero-visual reveal" data-delay="0.1">
+                    <div class="hero-image-frame tilt-horizontal">
+                        <div class="image-wrapper">
+                            <img src="./assets/aisosa.png" alt="Aisosa Edobor - Executive Assistant"
+                                class="hero-image" />
+                            <div class="image-overlay"></div>
+                            <div class="glass-overlay"></div>
+                        </div>
+                        <span class="corner-deco corner-tl">✦</span>
+                        <span class="corner-deco corner-tr">✦</span>
+                        <span class="corner-deco corner-bl">✦</span>
+                        <span class="corner-deco corner-br">✦</span>
+                    </div>
+
+                    <!-- Stats Bar -->
+                    <div class="hero-stats-row glass-card">
+                        <div class="stat">
+                            <strong id="stat1">0</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat">
+                            <strong id="stat2">0</strong>
+                            <span>Organizations</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="stat">
+                            <strong id="stat3">0</strong>
+                            <span>Efficiency Gain</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="hero-content reveal" data-delay="0.2">
+                    <span class="hero-badge">✦ Executive Assistant</span>
+                    <h1>
+                        <span class="hero-prefix">I create</span>
+                        <span class="typing-text" id="typingText"></span>
+                    </h1>
+                    <p class="hero-desc">I help founders and executives stay organized, on schedule, and ahead of their
+                        inbox. I systemize the chaos into calm — so you can focus on what matters most.</p>
+                    <div class="hero-actions">
+                        <a href="https://calendly.com/aisosacynthiaedobor/15-minute-discovery-call" target="_blank"
+                            class="btn btn-primary magnetic">
+                            <i class="fas fa-calendar-check"></i> Book a Discovery Call
+                        </a>
+                        <a href="./assets/aisosa_resume.pdf" download class="btn btn-outline magnetic">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                    </div>
+                    <div class="hero-tags">
+                        <span>✦ Executive Support</span>
+                        <span class="dot">·</span>
+                        <span>✦ Calendar Management</span>
+                        <span class="dot">·</span>
+                        <span>✦ Project Management</span>
+                        <span class="dot">·</span>
+                        <span>✦ Virtual Assistance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    ABOUT
+    ============================================= -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left: Text Content -->
+                <div class="about-text reveal">
+                    <span class="section-tag">About</span>
+                    <h2 class="section-title">Your partner in <span>productivity</span></h2>
+
+                    <p><strong>Aisosa Cynthia Edobor</strong> has spent the last three years inside the operations of
+                        growing businesses — not just supporting them, but building the systems that keep them running.
+                    </p>
+
+                    <p>She built the weekly reporting rhythms that kept business development, finance, and operations
+                        teams aligned. She managed calendars and inboxes that leadership actually trusted. She wrote the
+                        bids and proposals that won new clients. From booking travel and hotels to running errands and
+                        handling the small logistics no one else has time for — she covers the full range of what keeps
+                        a founder moving.</p>
+
+                    <p>With a <strong>Bachelor's in Library and Information Science</strong> from the University of
+                        Benin and certification as a <strong>Virtual Assistant through ALX Africa</strong>, Aisosa
+                        brings disciplined documentation, information retrieval, and organizational structure to every
+                        role.</p>
+
+                    <p>Her range includes meeting minutes, handover documents, brand activation materials, supplier
+                        compliance, executive social presence, and client acquisition. More than once, she has walked
+                        into a company with no systems and left it with structure that outlasted her.</p>
+
+                    <p><em>She now works with founders, executives, and entrepreneurs who need someone who can hold
+                            their business together while they build it — based in Lagos, serving clients across the US,
+                            UK, Canada, UAE, and Australia.</em></p>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary magnetic">
+                            <i class="fas fa-calendar-check"></i> Work With Me
+                        </a>
+                        <a href="./assets/aisosa_resume.pdf" download class="btn btn-outline magnetic">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: 3 Cards -->
+                <div class="about-cards">
+                    <div class="about-card glass-card reveal" data-delay="0.1">
+                        <h4><i class="fas fa-calendar-alt"></i> Executive Support</h4>
+                        <p>Calendar & inbox management, travel coordination, meeting prep, and confidential stakeholder
+                            communication across time zones.</p>
+                    </div>
+                    <div class="about-card glass-card reveal" data-delay="0.2">
+                        <h4><i class="fas fa-tasks"></i> Project Management</h4>
+                        <p>Tracking initiatives, drafting bids and reports, coordinating cross-functional teams, and
+                            ensuring deliverables stay on schedule.</p>
+                    </div>
+                    <div class="about-card glass-card reveal" data-delay="0.3">
+                        <h4><i class="fas fa-pen-fancy"></i> Content & Operations</h4>
+                        <p>Content coordination, SEO strategy, social media management, and operational documentation
+                            that creates lasting structure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CORE COMPETENCIES
+    ============================================= -->
+    <section class="competencies" id="competencies">
+        <div class="container">
+            <div class="competencies-header reveal">
+                <span class="section-tag">Core Competencies</span>
+                <h2 class="section-title">What I <span>bring</span></h2>
+                <p class="section-sub">A comprehensive skill set built across executive support, project management, and
+                    operations.</p>
+            </div>
+            <div class="competencies-grid">
+                <div class="comp-card glass-card reveal" data-delay="0.05">
+                    <div class="comp-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Executive Support</h3>
+                    <ul>
+                        <li>Executive Calendar &amp; Inbox Management</li>
+                        <li>Meeting Preparation &amp; Follow-Up</li>
+                        <li>Travel &amp; Itinerary Coordination</li>
+                        <li>Stakeholder Correspondence</li>
+                        <li>Confidential File Management</li>
+                        <li>Event Planning &amp; Coordination</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.1">
+                    <div class="comp-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Project &amp; Initiative Tracking</li>
+                        <li>Bid Writing &amp; Proposal Development</li>
+                        <li>Cross-Functional Coordination</li>
+                        <li>Report &amp; Documentation</li>
+                        <li>Time &amp; Priority Management</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.15">
+                    <div class="comp-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools &amp; Technologies</h3>
+                    <ul>
+                        <li>Microsoft Office 365 • Google Workspace</li>
+                        <li>Slack • Zoom • Google Meet</li>
+                        <li>Notion • Trello</li>
+                        <li>CRM Databases</li>
+                        <li>WordPress • Canva</li>
+                        <li>CapCut • Graphic Design Tools</li>
+                    </ul>
+                </div>
+                <div class="comp-card glass-card reveal" data-delay="0.2">
+                    <div class="comp-icon"><i class="fas fa-star"></i></div>
+                    <h3>Core Attributes</h3>
+                    <ul>
+                        <li>Organized &amp; Reliable</li>
+                        <li>Detail-Oriented</li>
+                        <li>Strong Communicator</li>
+                        <li>Discreet &amp; Confidential</li>
+                        <li>Fast Learner &amp; Problem Solver</li>
+                        <li>Remote-Ready &amp; Cross-Timezone</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    EXPERIENCE
+    ============================================= -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="experience-header reveal">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">Where I've <span>worked</span></h2>
+                <p class="section-sub">Supporting executives and building operations systems across industries.</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="exp-item reveal" data-delay="0.05">
+                    <div class="exp-year">Aug 2026 – Present</div>
+                    <div class="exp-content">
+                        <h3>Executive Assistant / Event Coordinator</h3>
+                        <p class="exp-org">Amala Ibadan · Hybrid</p>
+                        <ul class="exp-duties">
+                            <li>Manage CEO's daily calendar, scheduling and confirming meetings across hybrid work
+                                schedules</li>
+                            <li>Triage and manage incoming emails, flagging priority items and drafting timely responses
+                                on behalf of leadership</li>
+                            <li>Plan and coordinate company events, handling logistics from planning through execution
+                            </li>
+                            <li>Handle errands and project coordination to keep leadership's schedule and deliverables
+                                on track</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal" data-delay="0.1">
+                    <div class="exp-year">Jun 2025 – Aug 2026</div>
+                    <div class="exp-content">
+                        <h3>Executive Assistant</h3>
+                        <p class="exp-org">Stevmart Integrated Services Limited · Remote</p>
+                        <ul class="exp-duties">
+                            <li>Tracked project timelines and action points across leadership initiatives, ensuring
+                                deliverables stayed on schedule</li>
+                            <li>Drafted 100+ winning bids and proposals that secured clients across diverse markets</li>
+                            <li>Coordinated communication between leadership and client stakeholders, managing CRM
+                                records for timely follow-up</li>
+                            <li>Prepared technical reports and executive correspondence supporting business development
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal" data-delay="0.15">
+                    <div class="exp-year">2024</div>
+                    <div class="exp-content">
+                        <h3>Intern</h3>
+                        <p class="exp-org">Dubai Institute of People · Remote</p>
+                        <ul class="exp-duties">
+                            <li>Produced professional reports and project documentation supporting departmental goals
+                            </li>
+                            <li>Strengthened brand visibility by designing graphics and editing short-form video content
+                            </li>
+                            <li>Ensured high-quality output through rigorous editing and proofreading of organizational
+                                materials</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-item reveal" data-delay="0.2">
+                    <div class="exp-year">2024</div>
+                    <div class="exp-content">
+                        <h3>Library Assistant (NYSC)</h3>
+                        <p class="exp-org">National Institute for Legislative and Democratic Studies · On-site</p>
+                        <ul class="exp-duties">
+                            <li>Managed front-desk appointment scheduling and member registration for diverse clientele
+                                including legislators</li>
+                            <li>Reorganized resource filing and digital archival systems, improving workflow efficiency
+                                by 10%</li>
+                            <li>Maintained accurate, up-to-date records of institutional materials through systematic
+                                organization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CERTIFICATIONS
+    ============================================= -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="certifications-header reveal">
+                <span class="section-tag">Certifications</span>
+                <h2 class="section-title">My <span>credentials</span></h2>
+                <p class="section-sub">Professional certifications that validate my expertise.</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card glass-card reveal" data-delay="0.05">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Virtual Assistant</h3>
+                    <p>ALX Africa · 2024</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.1">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Executive Assistant Certification</h3>
+                    <p>ALX Africa · 2024</p>
+                </div>
+                <div class="cert-card glass-card reveal" data-delay="0.15">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Bachelor of Science</h3>
+                    <p>Library &amp; Information Science · University of Benin · 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    TOOLS & TECH STACK
+    ============================================= -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <div class="tools-header reveal">
+                <span class="section-tag">My Toolkit</span>
+                <h2 class="section-title">Tools I <span>work with</span></h2>
+                <p class="section-sub">The platforms, software, and systems I use daily to deliver excellence.</p>
+            </div>
+            <div class="tools-grid">
+                <!-- Category 1: Productivity & Communication -->
+                <div class="tool-card glass-card reveal" data-delay="0.05">
+                    <div class="tool-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Productivity &amp; Communication</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Google Workspace (Gmail, Calendar, Drive, Docs, Sheets,
+                            Meet)</li>
+                        <li><i class="fas fa-check-circle"></i> Microsoft Office 365 (Word, Excel, PowerPoint, Outlook,
+                            Teams)</li>
+                        <li><i class="fas fa-check-circle"></i> Zoom</li>
+                        <li><i class="fas fa-check-circle"></i> Slack</li>
+                        <li><i class="fas fa-check-circle"></i> Google Drive</li>
+                    </ul>
+                </div>
+
+                <!-- Category 2: Project Management -->
+                <div class="tool-card glass-card reveal" data-delay="0.1">
+                    <div class="tool-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Notion</li>
+                        <li><i class="fas fa-check-circle"></i> Trello</li>
+                        <li><i class="fas fa-check-circle"></i> CRM Databases</li>
+                        <li><i class="fas fa-check-circle"></i> Project Tracking Software</li>
+                        <li><i class="fas fa-check-circle"></i> Event Coordination Tools</li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: Content & Creative -->
+                <div class="tool-card glass-card reveal" data-delay="0.15">
+                    <div class="tool-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Content &amp; Creative</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> WordPress</li>
+                        <li><i class="fas fa-check-circle"></i> Canva</li>
+                        <li><i class="fas fa-check-circle"></i> CapCut</li>
+                        <li><i class="fas fa-check-circle"></i> Graphic Design Software</li>
+                        <li><i class="fas fa-check-circle"></i> Content Management Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Category 4: Documentation & Research -->
+                <div class="tool-card glass-card reveal" data-delay="0.2">
+                    <div class="tool-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Documentation &amp; Research</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Report Writing</li>
+                        <li><i class="fas fa-check-circle"></i> Bid Writing &amp; Proposals</li>
+                        <li><i class="fas fa-check-circle"></i> SOP Documentation</li>
+                        <li><i class="fas fa-check-circle"></i> Meeting Minutes &amp; Action Tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Market Research Tools</li>
+                    </ul>
+                </div>
+
+                <!-- Category 5: Data Management -->
+                <div class="tool-card glass-card reveal" data-delay="0.25">
+                    <div class="tool-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Management</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Data Entry</li>
+                        <li><i class="fas fa-check-circle"></i> Microsoft Excel</li>
+                        <li><i class="fas fa-check-circle"></i> Google Sheets</li>
+                        <li><i class="fas fa-check-circle"></i> MICROS</li>
+                        <li><i class="fas fa-check-circle"></i> Digital Archival Systems</li>
+                    </ul>
+                </div>
+
+                <!-- Category 6: Library & Information Science -->
+                <div class="tool-card glass-card reveal" data-delay="0.3">
+                    <div class="tool-icon"><i class="fas fa-book"></i></div>
+                    <h3>Library &amp; Information Science</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Library Management Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Cataloging &amp; Classification</li>
+                        <li><i class="fas fa-check-circle"></i> Digital Archival Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Research &amp; Reference Services</li>
+                        <li><i class="fas fa-check-circle"></i> Information Retrieval</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    WORK SAMPLES CAROUSEL - 9 SAMPLES
+    ============================================= -->
+    <section class="work-carousel" id="work">
+        <div class="container">
+            <div class="work-header reveal">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Work <span>samples</span></h2>
+                <p class="section-sub">Real projects and systems I've built for clients across industries.</p>
+            </div>
+
+            <div class="work-carousel-wrapper">
+                <div class="work-carousel-track" id="workTrack">
+                    <!-- Card 1: Executive Support -->
+                    <div class="work-card">
+                        <img src="./assets/calender_mgt.png" alt="Executive Support" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Support</h3>
+                            <span class="work-result">Calendar management, meeting prep &amp; stakeholder
+                                communication</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Executive Inbox Management -->
+                    <div class="work-card">
+                        <img src="./assets/inbox_mgt.png" alt="Executive Inbox Management" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Inbox Management</h3>
+                            <span class="work-result">Email triage, priority flagging &amp; timely responses</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Project Tracking - Trello -->
+                    <div class="work-card">
+                        <img src="./assets/client-trello.jpg" alt="Project Tracking - Trello Board"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Project Management</span>
+                            <h3>Project Tracking</h3>
+                            <span class="work-result">Trello board management, action tracking &amp; deliverables</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Client Onboarding -->
+                    <div class="work-card">
+                        <img src="./assets/client_onboarding.png" alt="Client Onboarding" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Operations</span>
+                            <h3>Client Onboarding</h3>
+                            <span class="work-result">Structured intake, documentation &amp; welcome workflows</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Documentation & Reporting -->
+                    <div class="work-card">
+                        <img src="./assets/meeting_agenda.png" alt="Documentation & Reporting" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Documentation</span>
+                            <h3>Documentation &amp; Reporting</h3>
+                            <span class="work-result">Meeting minutes, reports &amp; handover documents</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Content Documentation -->
+                    <div class="work-card">
+                        <img src="./assets/content-calendar.jpg" alt="Content Documentation" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Documentation</span>
+                            <h3>Content Documentation</h3>
+                            <span class="work-result">SOPs, process documentation &amp; brand materials</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: CRM Management -->
+                    <div class="work-card">
+                        <img src="./assets/client_tracker.png" alt="CRM Management" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">CRM</span>
+                            <h3>CRM Management</h3>
+                            <span class="work-result">Client data centralization, tracking &amp; follow-ups</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: Travel Coordination -->
+                    <div class="work-card">
+                        <img src="./assets/travel_coordination.png" alt="Travel Coordination" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Travel Management</span>
+                            <h3>Travel Coordination</h3>
+                            <span class="work-result">End-to-end travel planning, itineraries &amp; logistics</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 9: Notion Client Portal -->
+                    <div class="work-card">
+                        <img src="./assets/notion_client_portal.png" alt="Notion Client Portal" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Client Portal</span>
+                            <h3>Notion Client Portal</h3>
+                            <span class="work-result">Client communication hub, document sharing &amp; visibility</span>
+                        </div>
+                    </div>
+
+                    <!-- DUPLICATES FOR SEAMLESS LOOP -->
+                    <div class="work-card">
+                        <img src="./assets/executive_support.jpg" alt="Executive Support" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Support</h3>
+                            <span class="work-result">Calendar management, meeting prep &amp; stakeholder
+                                communication</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/inbox_mgt.png" alt="Executive Inbox Management" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Executive Support</span>
+                            <h3>Executive Inbox Management</h3>
+                            <span class="work-result">Email triage, priority flagging &amp; timely responses</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/project_tracking.png" alt="Project Tracking - Trello Board"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Project Management</span>
+                            <h3>Project Tracking</h3>
+                            <span class="work-result">Trello board management, action tracking &amp; deliverables</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/client_onboarding.png" alt="Client Onboarding" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Operations</span>
+                            <h3>Client Onboarding</h3>
+                            <span class="work-result">Structured intake, documentation &amp; welcome workflows</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/documentation.png" alt="Documentation & Reporting" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Documentation</span>
+                            <h3>Documentation &amp; Reporting</h3>
+                            <span class="work-result">Meeting minutes, reports &amp; handover documents</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/content_documentation.jpg" alt="Content Documentation"
+                            class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Documentation</span>
+                            <h3>Content Documentation</h3>
+                            <span class="work-result">SOPs, process documentation &amp; brand materials</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/crm_mgt.jpg" alt="CRM Management" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">CRM</span>
+                            <h3>CRM Management</h3>
+                            <span class="work-result">Client data centralization, tracking &amp; follow-ups</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/travel_coordination.png" alt="Travel Coordination" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Travel Management</span>
+                            <h3>Travel Coordination</h3>
+                            <span class="work-result">End-to-end travel planning, itineraries &amp; logistics</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <img src="./assets/notion_client_portal.png" alt="Notion Client Portal" class="work-card-img" />
+                        <div class="work-overlay"></div>
+                        <div class="work-content">
+                            <span class="work-tag">Client Portal</span>
+                            <h3>Notion Client Portal</h3>
+                            <span class="work-result">Client communication hub, document sharing &amp; visibility</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="work-carousel-btn work-prev" id="workPrev"><i class="fas fa-chevron-left"></i></button>
+                <button class="work-carousel-btn work-next" id="workNext"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    TESTIMONIALS - 12 TESTIMONIALS
+    ============================================= -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonials-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What people <span>say</span></h2>
+                <p class="section-sub">Real feedback from executives and collaborators.</p>
+            </div>
+            <div class="testimonial-carousel-wrapper">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonial 1 - Stevmart (Executive Leadership) -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa has been an exceptional Executive Assistant. Her calendar management skills are
+                            outstanding — she keeps my schedule organized and ensures I'm always prepared. Her attention
+                            to detail and proactive approach have made a significant difference in my productivity.</p>
+                        <div class="author">
+                            <div class="initial">S</div>
+                            <div>
+                                <div class="name">Stevmart Integrated Services</div>
+                                <div class="role">Executive Leadership</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 - Stevmart (Client) -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa's bid writing skills are exceptional. She crafted winning proposals that secured
+                            clients across diverse markets. Her research abilities and attention to detail made her an
+                            invaluable asset to our business development efforts.</p>
+                        <div class="author">
+                            <div class="initial">S</div>
+                            <div>
+                                <div class="name">Stevmart Integrated Services</div>
+                                <div class="role">Client</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 - Amala Ibadan -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Working with Aisosa was a game-changer. She's organized, reliable, and brings a level of
+                            professionalism that's rare to find. She handled our event planning and coordination
+                            flawlessly, taking the stress off our leadership team.</p>
+                        <div class="author">
+                            <div class="initial">A</div>
+                            <div>
+                                <div class="name">Amala Ibadan</div>
+                                <div class="role">Operations Team</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 - Dubai Institute of People -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa's documentation and reporting skills are top-tier. She created clear, professional
+                            materials that helped our team stay aligned. Her ability to work remotely and manage
+                            cross-timezone communication is exceptional.</p>
+                        <div class="author">
+                            <div class="initial">D</div>
+                            <div>
+                                <div class="name">Dubai Institute of People</div>
+                                <div class="role">Project Lead</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 - NILDS -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa's work as a Library Assistant was outstanding. She reorganized our filing and archival
+                            systems, improving workflow efficiency by 10%. Her systematic approach and attention to
+                            detail made a lasting impact on our operations.</p>
+                        <div class="author">
+                            <div class="initial">N</div>
+                            <div>
+                                <div class="name">NILDS</div>
+                                <div class="role">Supervisor</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 - Omorodiuwa Non-Profit -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa was a dedicated Data Entry Officer at our organization. Her data management skills and
+                            attention to detail ensured accurate records. She's reliable, hardworking, and a great team
+                            player.</p>
+                        <div class="author">
+                            <div class="initial">O</div>
+                            <div>
+                                <div class="name">Omorodiuwa Non-Profit</div>
+                                <div class="role">Team Lead</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 7 - University of Benin -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>During her time as a Library Intern at the University of Benin, Aisosa demonstrated
+                            exceptional organizational skills. She handled cataloging and library management with
+                            precision and care. Her work ethic and dedication were truly impressive.</p>
+                        <div class="author">
+                            <div class="initial">U</div>
+                            <div>
+                                <div class="name">University of Benin Library</div>
+                                <div class="role">Library Supervisor</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 8 - ALX Africa -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa was one of the standout participants in our Virtual Assistant program. She
+                            demonstrated exceptional project management skills, a strong work ethic, and a genuine
+                            passion for supporting executives. She is a fast learner and a reliable professional.</p>
+                        <div class="author">
+                            <div class="initial">A</div>
+                            <div>
+                                <div class="name">ALX Africa</div>
+                                <div class="role">Program Facilitator</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 9 - Event Coordination Client -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa coordinated our annual company event flawlessly. From logistics to on-site management,
+                            she handled everything with professionalism and grace. Our team was able to focus on the
+                            event itself because she had every detail covered.</p>
+                        <div class="author">
+                            <div class="initial">E</div>
+                            <div>
+                                <div class="name">Corporate Events Ltd</div>
+                                <div class="role">Event Partner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 10 - Bid Writing Client -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>We hired Aisosa to help with a critical bid proposal, and she exceeded our expectations. Her
+                            research was thorough, her writing was compelling, and she delivered ahead of schedule.
+                            Thanks to her, we won the contract.</p>
+                        <div class="author">
+                            <div class="initial">B</div>
+                            <div>
+                                <div class="name">Bid & Proposal Agency</div>
+                                <div class="role">Client</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 11 - Project Tracking Client -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa set up our entire project tracking system using Trello. She trained our team, created
+                            workflows, and ensured everyone understood how to use it. Our project completion rate
+                            improved significantly after she implemented the system.</p>
+                        <div class="author">
+                            <div class="initial">P</div>
+                            <div>
+                                <div class="name">Project Management Office</div>
+                                <div class="role">Operations Lead</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 12 - CRM Implementation -->
+                    <div class="testimonial-card glass-card">
+                        <div class="quote">"</div>
+                        <p>Aisosa implemented our CRM system from scratch. She organized all our client data, set up
+                            tracking systems, and created reporting templates. Our sales team now has full visibility
+                            into our pipeline, thanks to her work.</p>
+                        <div class="author">
+                            <div class="initial">C</div>
+                            <div>
+                                <div class="name">Sales & Marketing Agency</div>
+                                <div class="role">Director</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-btn testimonial-prev" id="testimonialPrev"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-btn testimonial-next" id="testimonialNext"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CONTACT
+    ============================================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content glass-card reveal" data-delay="0.1">
+                    <span class="section-tag">Get in touch</span>
+                    <h2 class="section-title">Let's <span>connect</span></h2>
+                    <p>Looking for an Executive Assistant who can systemize your chaos into calm, manage your calendar
+                        and inbox, and keep your business running smoothly? Let's talk.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:aisosacynthiaedobor@gmail.com">aisosacynthiaedobor@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+2349037579388">+234 903 757 9388</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin-in"></i>
+                            <a href="https://linkedin.com/in/aisosa-edobor"
+                                target="_blank">linkedin.com/in/aisosa-edobor</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <a href="https://calendly.com/aisosacynthiaedobor/15-minute-discovery-call"
+                                target="_blank">calendly.com/aisosacynthiaedobor/15-minute-discovery-call</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/2349037579388" target="_blank">+234 903 757 9388 (WhatsApp)</a>
+                        </div>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="https://calendly.com/aisosacynthiaedobor/15-minute-discovery-call" target="_blank"
+                            class="btn btn-primary magnetic">
+                            <i class="fas fa-calendar-plus"></i> Book a Discovery Call
+                        </a>
+                        <a href="./assets/aisosa_resume.pdf" download class="btn btn-outline magnetic">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form glass-card reveal" data-delay="0.2">
+                    <form id="contactForm" action="https://formspree.io/f/xdeolokr" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email address" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="How can I support you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic">
+                            <i class="fas fa-paper-plane"></i> Send message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    CONNECT
+    ============================================= -->
+    <section class="connect" id="connect">
+        <div class="container">
+            <div class="connect-content reveal">
+                <span class="section-tag">Connect</span>
+                <h2 class="section-title">Find me <span>online</span></h2>
+                <p class="section-sub">I'm currently open to remote opportunities. Reach out via any platform below.</p>
+            </div>
+            <div class="connect-social-grid reveal" data-delay="0.1">
+                <a href="https://linkedin.com/in/aisosa-edobor" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:aisosacynthiaedobor@gmail.com" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://wa.me/2349037579388" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://calendly.com/aisosacynthiaedobor/15-minute-discovery-call" target="_blank"
+                    class="social-link calendly">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Calendly</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+    FOOTER
+    ============================================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">Aisosa<span>.</span></div>
+                    <p>Executive Assistant &amp; Virtual Support Specialist</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#competencies">Competencies</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#tools">Tools</a></li>
+                        <li><a href="#work">Work</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li>Executive Support</li>
+                        <li>Calendar Management</li>
+                        <li>Project Management</li>
+                        <li>Virtual Assistance</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:aisosacynthiaedobor@gmail.com">aisosacynthiaedobor@gmail.com</a></li>
+                        <li><a href="tel:+2349037579388">+234 903 757 9388</a></li>
+                        <li><a href="https://linkedin.com/in/aisosa-edobor" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://calendly.com/aisosacynthiaedobor/15-minute-discovery-call"
+                                target="_blank">Book a Discovery Call</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aisosa Edobor · Executive Assistant</p>
+                <p class="tagline">Systemizing founders' chaos into calm.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============================================
+    SCRIPTS
+    ============================================= -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
